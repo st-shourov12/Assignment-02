@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="header max-w-[1140px] mx-auto">
-        <nav class="navigation flex justify-between items-center mt-[30px] mb-30">
+        <nav class="navigation my-10 md:mt-[40px] flex justify-between items-center sm:mt-[30px] md:mb-30">
             <a href=""><img src="./assets/logo.png" alt="" class="logo"></a>
             <div class="menu flex justify-between">
 
-                <ul class="flex justify-between gap-12">
+                <ul class="gap-12 hidden sm:flex sm:justify-between">
                     <li class="list-item text-[#252432] font-bold"><a href="#">Home</a></li>
                     <li class="list-item text-[#8987A1]"><a href="">Shop</a></li>
                     <li class="list-item text-[#8987A1]"><a href="">About us</a></li>
@@ -28,18 +28,24 @@
         </nav>
         <!-- =====End of Navigation===== -->
 
-        <div class="hero flex items-end">
+        <div class="hero flex justify-between items-end">
+            
+                
+
             <div class="hero-text w-[50%]">
-                <h1 class="hero-title text-[4.0625rem] font-bold leading-[89px]">
-                    ALWAYS <span class="orange text-[#E95A08]">FRESH FLOWER</span>
+
+                <h1 class="hero-title text-[4.0625rem] font-bold leading-20">
+                     ALWAYS <span class="primary">FRESH FLOWERS</span>
                 </h1>
-                <p class="description text-[1.375rem] text-[#000000] opacity-50 leading-[27px]">
-                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                <p class="description text-[1.375rem] leading-6">
+                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
                 </p>
             </div>
+            
             <figure class="hero-image w-[50%]">
-                <img src="./assets/hero-flower.png" alt="">
+                <img src="./assets/hero-flower.png" class="" alt="">
             </figure>
+
         </div>
 
 
@@ -47,8 +53,130 @@
     </header>
     <!-- <<<<<=-----=====End of Header=====-----=>>>>> -->
 
+    <!-- <<<<<=-----=====Start of Main=====-----=>>>>> -->
+    <main>
+        <!-- <<<<<=-----=====/=====-----=>>>>> -->
+        <section class="plant-section max-w-[1140px] mx-auto mt-[120px]">
+            <div class="section-text text-black text-center">
+                <h2 class="title">
+                    <span class="primary">Our</span> Plants
+                </h2>
+                <p class="description mt-4 max-w-[888px] mx-auto">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+                </p>
+            </div>
+            
+            <div class="cart-container grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 gap-5">
+
+                <!-- card-1 -->
+                <div class="cart cart-1 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-2 -->
+                <div class="cart cart-2 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-3 -->
+                <div class="cart cart-3 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-4 -->
+                <div class="cart cart-4 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-5 -->
+                <div class="cart cart-5 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-6 -->
+                <div class="cart cart-6 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-7 -->
+                <div class="cart cart-7 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+                <!-- card-8 -->
+                <div class="cart cart-8 max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
+
+                <!-- card-9 -->
+                <div class="cart cart-9 hidden max-w-[270px]">
+                    <img src="./assets/sample-flower-image.png" alt="">
+                    <h3 class="cart-title text-center text-2xl font-medium">Lily Blossom</h3>
+                    <h4 class="cart-price text-center text-2xl font-bold">
+                        20 USD
+                    </h4>
+                    <button class="btn-cart bg-primary w-[100%] text-white font-semibold py-[1rem]" onclick="alert('Flower Added to Cart')">ADD TO CARTS</button>
+                </div>
 
 
+            </div>
+
+        </section>
+        <!-- <<<<<=-----=====/=====-----=>>>>> -->
+
+        <!-- <<<<<=-----=====/=====-----=>>>>> -->
+        <section class="flower-plant-section md:flex md:justify-between md:items-center gap-15 max-w-[1140px] mx-auto mt-[210px]">
+            <figure class="relative md:max-w-[5O%] ">
+                <img src="./assets/image 7.png" class="max-w-[100%] mx-auto" alt="">
+                <img src="./assets/trusted-badge.png" width="286px" height="286px" class="badge hidden md:block absolute -top-30 -right-23" alt="">
+            </figure>
+            <div class="flower-text md:w-[50%]">
+                <h2 class="title">
+                    Flower & Plants Lover
+                </h2>
+                <ul class="list-disc list-outside ml-5">
+                    <li class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- <<<<<=-----=====/=====-----=>>>>> -->
+    </main>
+    <!-- <<<<<=-----=====/=====-----=>>>>> -->
 
 
 

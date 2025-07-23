@@ -1,2 +1,186 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+    
+    
+}
+
+
+
+:root{
+    --primary: #E95A08;
+    --secondary: rgba(0, 0, 0, 0.5);
+    --tertiary: rgb(0, 0, 0);
+}
+
+
+.noto{
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+}
+
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+
+.title{
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 4.25rem;
+}
+
+
+
+.description{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+
+
+
+.primary{
+    color: var(--primary);
+}
+
+.bg-primary{
+    background-color: #E95A08;
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.dark-gray{
+    color: var(--tertiary);
+}
+
+
+.badge{
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    to{
+
+        transform: rotate(360deg);
+    }
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    .hero{
+        flex-direction: column-reverse;
+        
+
+    }
+
+    main,footer,
+    .navigation,
+    .hero-text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hero-text{
+        width: 100%;
+        align-self: flex-start;
+        margin-top: 40px;
+    }
+
+    .hero-title, .title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .description{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .hero-image{
+        width: 100%;
+        padding-right: 0;
+    }
+    .cart-title,
+    .cart-price,
+    .btn-cart{
+        font-size: 1rem;
+    }
+    
+
+
+}
+
+
+@media (min-width:577px) and (max-width:890px) {
+    .hero{
+        align-items: end;
+    }
+
+    .hero-title, .title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    .description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero-text{
+        width: 100%;
+        align-self: end;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .cart-container{
+        justify-items: center ;
+    }
+}
+
+
+@media (min-width:891px) and (max-width:1140px){
+    .cart-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* .cart-8{
+        grid-column-start: 3;
+    } */
+    .cart-9{
+        display: block;
+    }
+
+    .cart-2,
+    .cart-5,
+    .cart-8{
+        justify-self: center;
+    }
+
+    .cart-3,
+    .cart-6,
+    .cart-9{
+        justify-self: end;
+    }
+    
+}
+
+
+@media (min-width:1141px) {
+    .cart-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
