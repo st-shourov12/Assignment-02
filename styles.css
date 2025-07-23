@@ -62,9 +62,14 @@ body{
     color: var(--tertiary);
 }
 
+.btn-cart:hover{
+    color: var(--primary);
+    background-color: white;
+
+}
 
 .badge{
-    animation: spin 10s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
