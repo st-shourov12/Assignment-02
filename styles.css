@@ -74,7 +74,7 @@ input[type="submit"]:hover{
 
 .btn-cart:hover{
     background-color: #a13b00;
-    transform: scale(1.08);
+    transform: scale(1);
     border-radius: 12px;
 
 }
@@ -169,9 +169,12 @@ input[type="submit"]:hover{
 
     }
 
-    main,footer,
     .navigation,
-    .hero-text{
+    .hero-text,
+    .plant-section,
+    .flower-plant-section,
+    .latest-deals,
+    footer{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -220,6 +223,10 @@ input[type="submit"]:hover{
         grid-column: 1 / 2;
     }
 
+    input[type="submit"], input[type="email"]{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     /* footer */
 
@@ -248,6 +255,15 @@ input[type="submit"]:hover{
     .description{
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .navigation,
+    .hero-text,
+    .plant-section,
+    .flower-plant-section,
+    .latest-deals{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hero-text{
@@ -309,7 +325,7 @@ input[type="submit"]:hover{
 }
 
 
-@media (min-width:891px) and (max-width:1140px){
+@media (min-width:891px) and (max-width:1139px){
     .cart-container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -321,6 +337,11 @@ input[type="submit"]:hover{
         display: block;
     }
 
+    .cart-1,
+    .cart-4,
+    .cart-7{
+        justify-self: end;
+    }
     .cart-2,
     .cart-5,
     .cart-8{
@@ -330,7 +351,7 @@ input[type="submit"]:hover{
     .cart-3,
     .cart-6,
     .cart-9{
-        justify-self: end;
+        justify-self: start;
     }
 
     .deals-container{
@@ -341,28 +362,21 @@ input[type="submit"]:hover{
         max-width: 600px;
     }
 
-    /* .bloom{
-        grid-area: bloom;
-        max-width: 361px;
-    }
-    
-    .ana{
-        grid-area: ana;
-        max-width: 361px;
-
-    }
-    .zabo{
-        grid-area: zoba;
-        min-width: 361px;
+    /* form-field */
+    form{
+        width: 70%;
     }
 
-    .deals-container{
-        grid-template-areas: 'bloom zoba zoba' 'ana zoba zoba';
-    } */
+    input[type="email"]{
+        width: 66%;
+    }
+    input[type="submit"]{
+        width: 30%;
+    }
 }
 
 
-@media (min-width:1141px) {
+@media (min-width:1140px) {
     .cart-container{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -376,5 +390,16 @@ input[type="submit"]:hover{
 
     .deals-container{
         max-width: 1140px;
+    }
+
+    form{
+        width: 70%;
+    }
+
+    input[type="email"]{
+        width: 66%;
+    }
+    input[type="submit"]{
+        width: 30%;
     }
 }
