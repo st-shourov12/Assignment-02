@@ -79,6 +79,53 @@ body{
     }
 }
 
+.deals{
+    position: relative;
+    /* background: url('./assets/deal-bloom.png'); */
+    /* min-width: 361px; 
+    min-height: 185px; */
+    border-radius: 14px;
+}
+
+.deals::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    border-radius: 14px;
+}
+
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ana{
+    grid-row: 2/3;
+    max-width: 366px;
+    max-height: 170px;
+    justify-self: end;
+}
+
+.bloom{
+    max-width: 366px;
+    max-height: 170px;
+    justify-self: end;
+}
+.zabo{
+    grid-column: 2 / 4;
+    grid-row: 1/3;
+    object-fit: fill;
+    width:  748px;
+    height: 356px;
+    justify-self: start;
+    
+    
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -120,7 +167,24 @@ body{
         font-size: 1rem;
     }
     
+    .deals-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
 
+    .bloom,
+    .ana,
+    .zabo{
+        width: 366px;
+        height: 185px;
+        justify-self: center;
+    }
+
+    .zabo{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
 
 }
 
@@ -154,6 +218,25 @@ body{
     .cart-container{
         justify-items: center ;
     }
+
+    .deals-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    .bloom,
+    .ana,
+    .zabo{
+        width: 366px;
+        height: 185px;
+        justify-self: center;
+    }
+
+    .zabo{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
 }
 
 
@@ -180,12 +263,49 @@ body{
     .cart-9{
         justify-self: end;
     }
+
+    .deals-container{
+        justify-content: center;
+    }
+
+    .zabo{
+        max-width: 600px;
+    }
+
+    /* .bloom{
+        grid-area: bloom;
+        max-width: 361px;
+    }
     
+    .ana{
+        grid-area: ana;
+        max-width: 361px;
+
+    }
+    .zabo{
+        grid-area: zoba;
+        min-width: 361px;
+    }
+
+    .deals-container{
+        grid-template-areas: 'bloom zoba zoba' 'ana zoba zoba';
+    } */
 }
 
 
 @media (min-width:1141px) {
     .cart-container{
         grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .bloom,
+    .ana{
+        justify-self: center;
+        width: 100%;
+    }
+
+    .deals-container{
+        max-width: 1140px;
     }
 }
