@@ -48,6 +48,13 @@ a:hover{
     font-weight: 700;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #c2510f;
+}
 
 .primary{
     color: var(--primary);
@@ -66,9 +73,31 @@ a:hover{
 }
 
 .btn-cart:hover{
-    color: var(--primary);
-    background-color: white;
+    background-color: #a13b00;
+    transform: scale(1.08);
+    border-radius: 12px;
 
+}
+
+.cart{
+    transition: transform 0.5s ease;
+    border-radius: 12px;
+    border: 1px solid #e65a09;
+}
+
+.btn-cart{
+    transition: transform 0.5s ease;
+    border-radius:0 0 12px 12px;
+}
+
+.cart img{
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #e65a09;
+}
+
+.cart:hover{
+    transform: scale(1.08);
+    border-radius: 12px;
 }
 
 .badge{
@@ -90,6 +119,7 @@ a:hover{
     border-radius: 14px;
 }
 
+
 .deals::after{
     content: '';
     position: absolute;
@@ -98,6 +128,7 @@ a:hover{
     z-index: 1;
     border-radius: 14px;
 }
+
 
 .deals-container{
     display: grid;
