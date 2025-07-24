@@ -43,7 +43,10 @@ body{
     color: var(--secondary);
 }
 
-
+a:hover{
+    color: black;
+    font-weight: 700;
+}
 
 
 .primary{
@@ -186,6 +189,18 @@ body{
         grid-column: 1 / 2;
     }
 
+
+    /* footer */
+
+    footer,
+    .footer-menu{
+        flex-direction: column;
+    }
+
+    .description{
+        margin-top: 5px;
+    }
+
 }
 
 
@@ -236,6 +251,29 @@ body{
     .zabo{
         grid-row: 3 / 4;
         grid-column: 1 / 2;
+    }
+
+    /* footer */
+
+
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-logo{
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-menu{
+        gap: 50px;
+    }
+    .first-menu,
+    .second-menu{
+        text-align: center;
     }
 }
 
