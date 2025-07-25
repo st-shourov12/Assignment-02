@@ -4,7 +4,7 @@
 
 body{
     font-family: "Inter", sans-serif;
-    
+    background: #F5F8FF;
     
 }
 
@@ -81,16 +81,16 @@ input[type="submit"]:hover{
 
 .cart{
     transition: transform 0.5s ease;
-    border-radius: 12px;
-    border: 1px solid #e65a09;
+    /* border-radius: 12px; */
+    /* border: 1px solid #e65a09; */
 }
 
-.btn-cart{
+.cart:hover .btn-cart{
     transition: transform 0.5s ease;
     border-radius:0 0 12px 12px;
 }
 
-.cart img{
+.cart:hover img{
     border-radius: 12px 12px 0 0;
     border-bottom: 1px solid #e65a09;
 }
@@ -98,6 +98,7 @@ input[type="submit"]:hover{
 .cart:hover{
     transform: scale(1.08);
     border-radius: 12px;
+    border: 1px solid #e65a09;
 }
 
 .badge{
@@ -169,6 +170,10 @@ input[type="submit"]:hover{
 
     }
 
+    .hero-title{
+        max-width: 220px;
+    }
+
     .navigation,
     .hero-text,
     .plant-section,
@@ -182,7 +187,7 @@ input[type="submit"]:hover{
     .hero-text{
         width: 100%;
         align-self: flex-start;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .hero-title, .title{
@@ -191,7 +196,7 @@ input[type="submit"]:hover{
     }
     .description{
         font-size: 14px;
-        line-height: 17px;
+        line-height: 20px;
     }
 
     .hero-image{
@@ -222,6 +227,7 @@ input[type="submit"]:hover{
         grid-row: 3 / 4;
         grid-column: 1 / 2;
     }
+
 
     input[type="submit"], input[type="email"]{
         padding-left: 10px;
@@ -300,6 +306,7 @@ input[type="submit"]:hover{
         grid-column: 1 / 2;
     }
 
+    
     /* footer */
 
 
@@ -364,7 +371,7 @@ input[type="submit"]:hover{
 
     /* form-field */
     form{
-        width: 70%;
+        width: 60%;
     }
 
     input[type="email"]{
